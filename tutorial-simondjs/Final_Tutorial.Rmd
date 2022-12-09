@@ -8,7 +8,7 @@ output:
 runtime: shiny
 ---
 
-This is an early version of an interactive approach to R tutorial design using the Shiny package. The final version will be longer and have more interactive functions. If you haven't already, please run hit the 'Run Document' button.
+This is an early version of an interactive approach to R tutorial design using the Shiny package. The final version will be longer and have more interactive functions.
 
 
 ```{r setup, include=FALSE}
@@ -31,12 +31,12 @@ ui <- shinyUI(
                         tags$a(href="https://techvidvan.com/tutorials/install-r/#install-r-mac", "link"), "for installation instructions:", tags$br(), 
                         "For now, however, follow this interactive tutorial to learn how to read R script. Subsequent tutorials will deal with navigating the R Studios application and conducting data science and visualization. Now please select Lesson 1.",
                         width = 8
-                        )
+                      )
              ),
              tabPanel("Lesson 1",
                       sidebarPanel(
                         tags$h3("Lesson 1: R as a Calculator"),
-                        "In its most basic form, R is a glorified calculator. Perform a calculation using + (addition), - (substraction), * (multiplication), or / (division). Look up more arithmetic operators or just follow this", tags$a(href="https://www.tutorialgateway.org/r-arithmetic-operators/", "link"), "if you're keen and try them out here!",
+                        "In its most basic form, R is a glorified calculator. Perform a calculation using + (addition), - (substraction), * (multiplication), or / (division) Give it a try in the box on the right. Look up more arithmetic operators or just follow this", tags$a(href="https://www.tutorialgateway.org/r-arithmetic-operators/", "link"), "if you're keen and try them out here! Once you're done, please proceed to Lesson 2",
                         width = 8
                       ),
                       mainPanel(
@@ -56,11 +56,11 @@ ui <- shinyUI(
                           tags$li(tags$b("Character:"), tags$br(),"The character data type is used to handle any form of text. This can include numbers. This type is also useful for categorical data. It is distinguished from other types by being surrounded by either quotation marks (“”) or apostrophes (‘’)."),
                           tags$li(tags$b("Factor:"), tags$br(),"Factoral data is a sub-category of character data. Usually character data is turned into factors to analyze these specific factors and avoid R getting confused with any other character data. Additionally, certain functions only work with factors."),
                           tags$li(tags$b("Logical:"), tags$br(),"Logical data can only be either ", em("TRUE"), "or", em("FALSE"),". This is useful when filtering out data based on defined factors.")
-                          ),
+                        ),
                         tags$br(),
                         "Additionally, you can change the type any given piece of data by using the function", em("as.A(B)"), "with", em("A"), "being the data type and", em("B"), "being the data. For example,", em("as.character(5)"), "turns the number 5 into a character. Give it a try in the text box. Once you're done, move on to Lesson 3.",
-                          width = 8
-                          ),
+                        width = 8
+                      ),
                       mainPanel(
                         em("This box tells you your data type if you enter data into the function (between the parentheses)"), 
                         width = 4, 
@@ -79,7 +79,7 @@ ui <- shinyUI(
                         tags$br(),
                         "How did that go? Amazing!^^ This should be a good point to leave it then. In Part 2, you will learn how to use conditional statements to filter out information and how to work with datasets, which are essentially a set of vectors with vectors! Exciting, isn't it?",
                         width = 8
-                        ),
+                      ),
                       mainPanel(
                         "Create a variable called 'name' and make its value a string (text enclosed by quotation marks or apostrophes) of your name.", 
                         width = 4, 

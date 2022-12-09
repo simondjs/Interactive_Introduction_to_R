@@ -89,14 +89,6 @@ ui <- shinyUI(
                         textOutput("variable_called")
                       )
              ),
-             tabPanel("Resources",
-                      sidebarPanel(
-                        tags$h3("Further Information"),
-                      ),
-                      mainPanel(
-                        "I don't know what to write here"
-                      )
-             )
   )
 )
 
